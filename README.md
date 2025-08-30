@@ -29,3 +29,12 @@
 1. Clona este repositorio:
    ```bash
    git clone https://github.com/xtoxico/HistoryZeroDomain.git
+
+
+2. Abre Chrome y entra en chrome://extensions/.
+
+3. Activa Modo Desarrollador (esquina superior derecha).
+
+4. Haz clic en Cargar descomprimida y selecciona la carpeta del proyecto.
+
+5. ¡Listo! Verás el icono de HistoryZeroDomain en tu barra de extensiones.
