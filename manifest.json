@@ -1,0 +1,23 @@
+{
+  "name": "HistoryZeroDomain",
+  "description": "Elimina entradas del historial de navegación para dominios específicos.",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "permissions": [
+    "history",
+    "storage",
+    "browsingData"
+  ],
+  "action": {
+    "default_title": "HistoryZeroDomain",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "service_worker.js"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}

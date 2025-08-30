@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>HistoryZeroDomain</title>
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 16px; width: 320px; }
+      label { display:block; margin: 8px 0 4px; font-weight: bold; }
+      input, textarea, button { width: 100%; box-sizing: border-box; padding: 6px; }
+      textarea { resize: vertical; }
+      small { color: #666; }
+      .log { margin-top: 12px; max-height: 150px; overflow-y: auto; font-size: 12px; background: #f6f6f6; padding: 8px; border-radius: 6px; }
+    </style>
+  </head>
+  <body>
+    <h3>HistoryZeroDomain</h3>
+
+    <label>Dominios (uno por línea)</label>
+    <textarea id="domains" rows="4" placeholder="youtube.com&#10;odysee.com"></textarea>
+    <small>Se eliminarán todas las entradas de estos dominios.</small>
+
+    <label style="margin-top:8px;">Desde (opcional)</label>
+    <input type="date" id="dateFrom"/>
+
+    <label>Hasta (opcional)</label>
+    <input type="date" id="dateTo"/>
+
+    <label style="margin-top:8px;">Máx. resultados a buscar</label>
+    <input type="number" id="maxResults" min="100" step="100" value="50000" />
+
+    <button id="run" style="margin-top:12px;">Borrar historial</button>
+
+    <div class="log" id="log"></div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
